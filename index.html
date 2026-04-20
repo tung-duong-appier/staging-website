@@ -51,7 +51,15 @@
 								</ul>
 							</footer>
 						</section>
-
+<script>
+  document.querySelector('a[href="#products"].button.large').addEventListener('click', function () {
+    if (typeof appier === 'function') {
+      appier('event', 'shop_now_clicked', {
+        'collection': 'Spring Collection 2026'
+      });
+    }
+  });
+</script>
 					<!-- Features -->
 						<section id="intro" class="container">
 							<div class="row">
