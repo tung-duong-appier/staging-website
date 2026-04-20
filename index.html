@@ -265,6 +265,17 @@
 										<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
 										<li><a class="icon brands fa-pinterest" href="#"><span class="label">Pinterest</span></a></li>
 									</ul>
+									<script>
+  document.querySelector('a.icon.brands.fa-facebook-f').addEventListener('click', function () {
+    if (typeof appier === 'function') {
+      const custom_attributes = {
+        'email': 'tung.duong@appier.com',
+        'phone_no': '+84982227272'
+      }
+      appier('identify', custom_attributes);
+    }
+  });
+</script>
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
